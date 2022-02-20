@@ -4,26 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href=".style/custom.css">
+
     <title>bootstrap</title>
 </head>
 <body>
-    
-    <div class="container" >
-        <div class="row">
-            <div class="col">
-                <h1>Coluna 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati ex magnam assumenda explicabo accusamus praesentium? Nisi adipisci quisquam, nesciunt voluptates cumque architecto corrupti! Rerum quidem possimus exercitationem quod minima cumque!</p>
-                <button type="button" class="btn btn-warning">Botão</button>
-            </div>
-            <div class="col">
-                <h2>Coluna 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veniam ratione id dolorem. Debitis iure vel sequi laboriosam rem ducimus praesentium, delectus, vitae, ipsa cumque doloribus mollitia ipsum atque aperiam.</p>
-                <button type="button" class="btn btn-dark">Botão</button>
+    <header>[
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Logo</h1>                       
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end"> 
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link " href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link " href="#contato">Contato</a></li>                        
+                    </ul>
 
+                </div>
             </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </header>
+    <section id="sobre">
+         <div class="container" >       
+                <div class="row">
+                    <div class="col-md-8 col-sm-1">
+                        <h2>Sobre</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati ex magnam assumenda explicabo accusamus praesentium? Nisi adipisci quisquam, nesciunt voluptates cumque architecto corrupti! Rerum quidem possimus exercitationem quod minima cumque!
+                       </p>
+                        <button type="button" class="btn btn-warning">Botão</button>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <img src="./images/pexels-afta-putta-gunawan-683039 (1).jpg" alt="quero café " class="img-fluid">
+                    </div>
+                </div>
+         </div>
+    </section> 
+
+    <section id="produtos">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <div class="card">
+                        <img src="./images/pexels-afta-putta-gunawan-683039 (1).jpg" alt="exemplo" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                            <a class="btn btn-primary" href="produto-1">ver produto</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/pexels-afta-putta-gunawan-683039 (1).jpg" alt="exemplo" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                            <a class="btn btn-primary" href="produto-2">ver produto</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/pexels-afta-putta-gunawan-683039 (1).jpg" alt="exemplo" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                            <a class="btn btn-primary" href="produto-3">ver produto</a>
+                        </div>
+                    </div>
+
+ 
+                </div>
+            </div>
+        </div>
+    </section>
+       
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md6 col-sm-12">
+                    <h2>Contato</h2>
+                    <p>Ficou interessado? Preencha os campos do formulário para receber uma contação</p>
+                </div>
+                <div class="col-md6 col-sm-12">
+                    <form class="form">
+
+
+                        <div class="input-group">
+                            <input class="form-control"type="text" name="nome" placeholder="Digite seu nome">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="form-control"type="text" name="e-mail" placeholder="digite seu e-mail">
+                        </div>
+                        
+                        <div class="input-group">
+                            <textarea class="form-control" name="" id="" rows="5" ></textarea>
+                        </div>
+                        <button type="submit" class="btn-lg btn-sucess">Solicitar Cotação</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
